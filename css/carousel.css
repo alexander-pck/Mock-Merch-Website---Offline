@@ -54,7 +54,7 @@ opacity: 1;
 
 .item_progress {cursor: pointer;width: 0.6vh;height: 0.6vh;background-color: #bfbfbf;/* border: 1px solid black; */border-radius: 50%;margin: 20px;transition: transform 0.05s linear, background-color 0.3s cubic-bezier(0.04, 1.2, 0.58, 1);}
 
-.container_progress {position: relative;display: flex;width: 100vw;justify-content: center;margin-bottom: 50px;}
+.container_progress {position: relative;display: flex;width: 100vw;justify-content: center;margin-bottom: 20px;}
 
 .selected_item_progress {
 transform: scale(1.5);
