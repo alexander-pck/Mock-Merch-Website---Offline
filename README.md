@@ -16,7 +16,7 @@ This is a **Mock Website for Merch**, initially created as a hobby project. The 
 
 ## Project Link
 
-[Visit the Mock Merch Website](INSERT_LINK_HERE)
+[Visit the Mock Merch Website](https://alexander-pck.github.io/Mock-Merch-Website-Onefile/)
 
 ## Usage
 
