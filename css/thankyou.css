@@ -1,0 +1,182 @@
+body:not(.thankyou_content) .thankyou_div {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+.thankyou_div {
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 7;
+    /* margin-top: 100vh; */
+    /* pointer-events: none; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s opacity ease;
+}
+
+body.thankyou_content .tankyoutxt {
+    color: rgb(20, 20, 20);
+    opacity: 1;
+}
+
+.tankyoutxt {
+    font-size: 3.2rem;
+    font-family: system-ui;
+    position: relative;
+    margin: 29px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(248, 248, 248);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* vertichange */
+body.verticalview .generalbuttons {
+    width: min(70vw,400px);
+}
+
+body.mobile .generalbuttons {
+    width: calc( min(70vw,70vh) );
+    font-size: 2.1rem;
+    border-radius: 219px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin: 15px;
+    padding: 25px;
+}
+
+.generalbuttons {
+    width: min(40vw,40vh);
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 0.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    font-family: system-ui;
+    position: relative;
+    /* margin-left: 18px; */
+    text-align: center;
+    color: rgba(255,255,255,1);
+    font-weight: 100;
+    height: min-content;
+    cursor: pointer;
+    /* width: 100%; */
+}
+
+body.salesinactive .lookatmore {
+    border: 2px solid #ffffff80;
+    background-color: #919191;
+    outline: none;
+    content: "Zurück";
+}
+
+body.salesinactive .lookatmore:hover{
+    background: #c1c1c1;
+    font-weight: 300;
+    color: #000000;
+  }
+
+.lookatmore {
+    outline: 2px solid var(--buttontype1);
+    background: var(--buttontype1);
+    border: 2px solid #ffffff;
+}
+
+.sendoffer{
+    margin-top: 1vh;
+    outline: 2px solid var(--buttontype2);
+    background: var(--buttontype2);
+    border: 2px solid var(--buttontype2);
+    color: #ffffff;
+}
+
+
+body.mobile .tankyoutxt {
+    font-size: 5.2rem !important;
+    margin-bottom: 9vh;
+}
+/* vertichange */
+body.verticalview:not(.cart_content) .tankyoutxt {
+    font-size: 2rem;
+}
+
+.checkthanks {
+    fill: green;
+    transform: rotateY(360deg);
+    animation-fill-mode:forwards;
+}
+
+.rotatecheck_ani {
+    animation: rotatecheck 1s ease-out 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes rotatecheck {
+    0% {transform: rotateY(0deg);}
+    10% {transform: rotateY(90deg);}
+
+    100% {transform: rotateY(360deg);}
+  }
+
+body.thankyouorder .thankyouorder_div {
+    opacity: 10;
+    z-index: 5;
+}
+
+
+.thankyouorder_div {
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    /* margin-top: 100vh; */
+    /* pointer-events: none; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s opacity ease;
+}
+
+.thankyouordertxt {
+    color: black
+}
+
+.optionsthankyou {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.reprint {background-color: var(--buttontype2);}
+
+.changecart {background-color: var(--pickupinfobuttoncolor);}
+
+.terminatewindow {
+    color: black;
+}

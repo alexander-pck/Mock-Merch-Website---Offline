@@ -1,0 +1,33 @@
+
+body:not(.cart_content) .cart_div{
+    opacity: 0;
+    pointer-events: none;
+}
+
+body.bigview_content .black_bg,
+body.cart_content .black_bg,
+body.pickupinfo .black_bg,
+body.finishemail .black_bg,
+body.enternickname .black_bg
+{
+    opacity: 0.9;
+}
+
+
+body.content #content1 {
+    opacity: 1;
+    height: 100vh;
+}
+body.content #content2 {
+    opacity: 1;
+    /* height: 100vh; */
+}
+
+
+body.introinfo ,
+body.cart_content,
+body.thankyou_content,
+body.bigview_content {
+    overflow-y: hidden;
+}
+

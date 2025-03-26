@@ -1,0 +1,52 @@
+.textshow {
+    position: absolute;
+    opacity: 0;
+    font-size: 8rem;
+    color:  var(--dark);
+    margin: 0;
+    transform: translateX(90px);
+    text-align: center;
+    height: 8rem;
+    font-family: serif;
+    white-space: nowrap;
+}
+
+/* vertichange */
+body.verticalview .textshow {
+    font-size: 9rem;
+}
+
+.animated {
+    animation: mymove 3s infinite;
+
+}
+/*  */
+@keyframes mymove {
+    0%   {}
+    60%  {opacity: 1;}
+    80%  {transform: translateX(-10px);}
+    90%  {opacity: 1;}
+    100% {opacity: 0;transform: translateX(-10px);}
+  }
+
+div#movingtext {
+    width: 100vw;
+    position: relative;
+    height: 8rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div#movingtext_inner {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+body.verticalview div#movingtext_inner {
+    display: flex;
+    justify-content: center;
+}

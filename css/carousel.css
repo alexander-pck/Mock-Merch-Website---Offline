@@ -1,0 +1,80 @@
+
+.item.middle {
+  /* transform: scale(1.1); */
+  opacity: 1;
+  /* border: 12px solid white; */
+}
+
+.container {/* display: flex; */overflow-x: scroll;/* height: calc(100vh - 8rem); *//* overflow-y: auto; */white-space: nowrap;scroll-snap-type: x mandatory; /* Snap horizontally */scroll-padding: 0px; /* Add padding to the container */scroll-snap-stop: always;position: relative; /* Enable positioning of invisible divs */transition: transform 0.6s,margin-top 0.6s ease;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;z-index: 5;scroll-behavior: smooth;/* transform: scale(.8); *//* width: 200vw; *//* margin-bottom: 9%; */position: relative;}
+
+/* Style the scrollbar track */
+.container::-webkit-scrollbar {
+display: none;
+}
+body.verticalview .item {
+border-radius: 3vw;
+}
+.item {margin: 50px;margin-left: 63px;margin-right: 63px;display: inline-block;width: min(60vw, 60vh);padding-bottom: 20px;scroll-snap-align: center; /* Snap to the center position */scroll-padding: 200px;border-radius: 30px;background: var(--itembg);box-shadow: 0px 0px 20px 8px rgba(100,100,100,0.5);/* transform: scale(0.90); */transition: transform 0.3s ease ,opacity 0.4s ease,border 1s ease,margin-top 1s ease; /* Add smooth transition *//* cursor: pointer; */opacity: 1;margin-top: 50px;/* transform: scale(0.94); */}
+
+.invisible-div {
+display: inline-block;
+width: calc(50% - 20px - 200px);  
+height: 1px;
+}
+
+.firstcontent {/* display: flex; */height: 100vh;flex-direction: column;width: 100vw;scroll-behavior: smooth;}
+.wrap-container {
+z-index: 1;
+height: 80vh;
+display:flex;
+transition: opacity 0.3s ease;
+justify-content: center;
+} 
+body.mobile .item {width: 80vw;/* height: calc(100vh - 8rem); *//* transform: scale(1.2); */border-radius: 7vw;margin: 3vw;margin-bottom: 130px;margin-top: 130px;margin-left: 20vw;margin-right: 20vw;pointer-events: none;}
+
+body.mobile .container {
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+-webkit-overflow-scrolling: touch;
+overflow-scrolling: touch;
+/* left: -37.5%; */
+display: flex;
+flex-wrap: nowrap;
+overflow-y: hidden;
+flex-direction: row;
+height: 100%;
+}
+
+
+
+body.mobile .item.box.middle {
+opacity: 1;
+}
+
+
+.item_progress {cursor: pointer;width: 0.6vh;height: 0.6vh;background-color: #bfbfbf;/* border: 1px solid black; */border-radius: 50%;margin: 20px;transition: transform 0.05s linear, background-color 0.3s cubic-bezier(0.04, 1.2, 0.58, 1);}
+
+.container_progress {position: relative;display: flex;width: 100vw;justify-content: center;margin-bottom: 50px;}
+
+.selected_item_progress {
+transform: scale(1.5);
+background-color: #787878;
+border: 0px solid black;
+}
+
+container::-webkit-scrollbar {
+  width: 0px
+}
+
+container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.container {
+  scrollbar-color: transparent transparent; /* Adjust color for Firefox */
+  -ms-overflow-style: none;
+}

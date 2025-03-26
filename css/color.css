@@ -1,0 +1,58 @@
+:root {
+    --dark: rgb(43 43 43);
+    --lighttext: rgb(209, 209, 209);
+    --offerdate: rgb(68 68 68);
+    --arrowsiwpedown: rgb(123 123 123);
+
+    --primary_color: #6495ed;
+    --second_color: #5378bb;
+    --third_color: #0e223abf;
+    --forth_color: #67809f;
+    
+
+    --green_like: #84b069;
+
+    /* #1979a2; */
+
+    /* carousel */
+    --itembg: #313131;
+    --itemprice: rgb(49 49 49);
+    --itemdesc: rgb(240, 240, 240);
+    --itemname: rgb(211 242 255);
+
+    /* bigview */
+    --bviewprice: #f3f3f3;
+    --bviewdesc: rgb(243, 243, 243);
+    --bviewname: rgb(243, 243, 243);
+    --bviewoptions: rgb(246, 246, 246);
+
+    /* cart */
+    --cartentry: rgb(243, 243, 243);
+    --cartnum: rgb(219, 219, 219);
+    --cartentrybgm: rgb(121 121 121);
+    --cartentrybgn: rgb(74 74 74);
+
+    --cartdel: rgb(227, 227, 227);
+
+    --cartallpirce: rgb(227, 227, 227);
+
+    /* pickupinfo */
+    --pickupinfotitlecolor: rgb(243, 243, 243);
+    --pickupinfotextcolor: rgb(227, 227, 227);
+    --pickupinfobuttoncolor: var(
+    --primary_color);
+    --infoscreen: var(
+    --third_color);
+
+    /* header */
+    --shoppingcard: var(
+    --primary_color);
+
+    /* allbuttons */
+    --buttontype1: var(
+    --primary_color);
+    --buttontype2: var(
+    --second_color);
+}
+
+

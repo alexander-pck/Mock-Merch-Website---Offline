@@ -1,0 +1,71 @@
+.printorder_div {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background: white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    flex-direction: column;
+}
+
+body.printorder .printorder_div {
+    z-index: 20;
+    opacity: 1;
+}
+
+body.printorder .firstcontent {
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+
+
+
+.qrcodeimg {
+    width: min(50vw,50vh);
+    height: min(50vw,50vh);
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.printorderbenr {
+    color: black;
+    margin: 0;
+}
+
+.printorderback {
+    position: absolute;
+    width: min(20vw,300px);
+    left: 0;
+}
+
+@media print {
+    .hideonprint {
+      display: none !important;
+    }
+
+    html and body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    html and body {
+        overflow: hidden;
+    }
+
+  }

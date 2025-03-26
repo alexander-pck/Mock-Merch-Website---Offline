@@ -1,0 +1,168 @@
+.datum {
+    height: 6rem;
+    opacity: 0;
+    font-size: 2rem;
+    width: 25vw;
+    justify-content: center;
+    transition: 1s opacity ease 2s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-family: serif;
+    color: var(--offerdate);
+    justify-content: space-around;
+    }
+
+
+    
+body.header_anidone  .datum {
+    opacity: 1;
+}
+
+body.mobile .datum2 {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    opacity: 1;
+}
+
+
+body.mobile .everydatum {display: flex;flex-direction: column;align-items: center;}
+
+body.verticalview .timetype {
+    font-size: 0.7rem;
+}
+
+body.mobile .timetype {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+}
+
+body:not(.mobile) .mobileshow {
+    display: none;
+}
+
+.timetype {
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    height: 1rem;
+}
+
+
+
+body.verticalview .timedatum {
+    font-size: 1.5rem;
+}
+
+body.mobile .timedatum {
+    font-size: 5rem;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+}
+
+
+
+.timedatum {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    /* margin-left: 4px; */
+    /* margin-right: 4px; */
+    font-family: sans-serif;
+}
+
+.datumdivider {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.valwdaydatum {
+    font-size: 1.5rem;
+}
+
+.wtagedatum {
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: none;
+}
+
+body.mobile .wtagedatum {
+    height: 5rem;
+    justify-content: inherit;
+}
+
+body.verticalview .datumdivider {
+    font-size: 1.5rem;
+}
+
+body.mobile .datumdivider {
+    font-size: 5rem;
+}
+
+
+.datum_clock {
+    display: flex;
+}
+
+body.verticalview .datumtext {
+    font-size: 1rem;
+}
+
+body.mobile .datumtext {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+body.mobile .datum1 .datumtext {
+    display: none;
+}
+
+body:not(.mobile) .datum3 .datumtext{
+    font-size: 3rem !important ;
+}
+
+body:not(.mobile) .datum3 .timedatum {
+    font-size: 2rem !important ;
+
+}
+body:not(.mobile) .datum3 .datumdivider{
+
+    font-size: 2rem !important ;
+}
+
+
+
+.datumtext{
+    font-size: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 0.5rem;
+}
+
+body:not(.mobile) .datummobile{
+    display: none
+}
+
+
+
+body.mobile .datum_clock{
+    display: none;
+}
+
+body.mobile .datum2 .datum_clock{
+    display: flex;
+    /* opacity: 1; */
+}
+
+body.mobile .datum3 .datum_clock{
+    display: flex;
+    /* opacity: 1; */
+}

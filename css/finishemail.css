@@ -1,0 +1,138 @@
+.finishemail_div {
+    position: absolute;
+    height: calc(100vh - 8rem);
+    width: 100vw;
+    top: 6rem;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s opacity ease;
+   }
+
+
+
+
+body.finishemail .finishemail_div {
+    z-index: 8;
+    opacity: 1;
+
+}
+
+.directmaillink {
+    margin: 10px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: var(--primary_color);
+    color: white;
+    outline: 2px solid;
+}
+
+
+.finishemail_directlink {
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ }
+
+ .sendemailfb-checkmark-label {
+    position: relative;
+    padding-left: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+.sendemailfb-custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+  
+.sendemailfb-checkmark {
+  position: absolute;
+  left: 0;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #f82d2d00;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  box-sizing: content-box;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  pointer-events: all;
+}
+.sendemailfb-checkmark::before {
+    content: "\2713";  /* Unicode checkmark symbol */
+    opacity: 1;
+    transition: opacity 0.3s; /* Add a smooth transition */
+    display: flex;
+    left: 0;
+    height: 1.7rem;
+    width: 1.7rem;
+    top: 0;
+    cursor: pointer;
+    box-sizing: content-box;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.sendemailfb-custom-checkbox:checked ~ .sendemailfb-checkmark::before {
+  opacity: 0; /* Visible when checked */
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  margin: 8px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.52, 0.1, 0.42, 0.84) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sendorderemail.loader {
+  display: none;
+}
