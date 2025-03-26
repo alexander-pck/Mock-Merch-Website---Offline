@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is a **Mock Website for Merch**, initially created as a hobby project. The site is unique in that it is built entirely with **vanilla JavaScript**—without any frameworks or libraries. Additionally, the entire website is contained within a **single HTML file** and can be used **without an internet connection**.
+This is a **Mock Website for Merch**, initially created as a hobby project. The site is unique in that it is built entirely with **vanilla JavaScript**—without any frameworks or libraries. Additionally, the entire website is contained within a **single HTML file** and can be used **without an internet connection**. The project was originally designed to be sent as an **HTML file attachment**, making it easy to share and use without requiring external hosting.
 
 ## Features
 
@@ -16,7 +16,7 @@ This is a **Mock Website for Merch**, initially created as a hobby project. The 
 
 ## Project Link
 
-[Visit the Mock Merch Website](https://alexander-pck.github.io/Mock-Merch-Website-Onefile/)
+[Visit the Mock Merch Website](INSERT_LINK_HERE)
 
 ## Usage
 
